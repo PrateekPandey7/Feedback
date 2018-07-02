@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="icon" href="npc.jpg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  
+  <div class = "mainheading">
+    <img src = "npc.jpg">
+    <strong><p>NATIONAL PRODUCTIVITY COUNCIL</p>
+    <p>TRAINING EVALUATION AND FEED BACK FORM</p></strong>
+  </div>
+
+  <form method = "post" action = "main.php">
+  
+    <div>
+      <label>Programme Name: </label>
+        <input name = "programme"></input>
+
+      <label>Duration: </label>
+        <input name = "duration" placeholder = "dd/mm/yyyy - dd/mm/yyyy"></input>
+
+      <label>Programme Coordinator: </label>
+        <input name = "coordinator"></input>
+        <hr>
+    </div>
+
+
+    <div>
+      Note: We attach a great significance to your evaluation. This would help us to rigorously evaluate the course. Please, therefore, be as candid as you can. Rest assured that your evaluation will be kept strictly confidential. You need not disclose your identity if you wish although it may be more helpful if you do.
+      <strong><center><p class = "personal">PERSONAL INFORMATION</p></center></strong>
+      <hr>
+      <label>Name of the Participant: </label>
+        <input name = "name"></input>
+      <label>Designation: </label>
+        <input name = "designation"></input>
+      <label>Name of the Organization: </label>
+        <input name = "organization"></input>
+      <label>Contact No./ Mobile No: </label>
+        <input name = "mobile" placeholder = "Mobile"></input>
+    </div>
+
+    <div>
+      <hr>
+      <strong><center><p>FEEDBACK</p></center></strong>
+      <table class = "table table-bordered">
+        <thead>
+          <th>S.No</th>
+          <th>Item</th>
+          <th>Rating Please</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class = "item">To what extent is this programme useful to you in your job or personal growth?</td>
+            <td><div class = "bt"><input type="radio" name="s1" value="Very Useful">Very Useful</div><div class = "bt"><input type="radio" name="s1" value="Quite Useful"> Quite Useful</div><div class = "bt"><input type="radio" name="s1" value="Of Limited Use"> Of Limited Use</div><div class = "bt"><input type="radio" name="s1" value="Not at all Useful"> Not at all Useful</div></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class = "item">How far have you been benefited from interaction with the fellow participants?</td>
+            <td><div class = "bt"><input type="radio" name="s2" value="Substantially"> Substantially</div><div class = "bt"><input type="radio" name="s2" value="Considerably"> Considerably</div><div class = "bt"><input type="radio" name="s2" value="Fairly"> Fairly</div><div class = "bt"><input type="radio" name="s2" value="Not at all"> Not at all</div></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class = "item">How was the quality and utility of course material and lecture notes circulated?</td>
+            <td><div class = "bt"><input type="radio" name="s3" value="Excellent"> Excellent</div><div class = "bt"><input type="radio" name="s3" value="Very Good"> Very Good</div><div class = "bt"><input type="radio" name="s3" value="Good"> Good</div><div class = "bt"><input type="radio" name="s3" value="Fair"> Fair</div><div class = "bt"><input type="radio" name="s3" value="Poor"> Poor</div></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class = "table table-bordered">
+        <tr>
+            <th width = "50px">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <th width = "150px">Topics found most useful</td>
+            <th width = "70px">By <div>(Faculty Name)</div></td>
+            <th width = "150px">Topics not found useful at all</td>
+            <th width = "70px">By <div>(Faculty Name)</div></td>
+            <th width = "170px">Suggestion for new topics to be added</td>
+        </tr>
+        <tr class = "topic">
+          <td width = "50px">4(i)</td>
+          <td><input size = "12" name = "topicuseful" placeholder = "1)"></input></td>
+          <td><input size = "8" name = "topicusefulby" placeholder = "1)"></input></td>
+          <td><input size = "12" name = "topicnotuseful" placeholder = "1)"></input></td>  
+          <td><input size = "8" name = "topicnotusefulby" placeholder = "1)"></input></td>
+          <td><input size = "14" name = "newtopic" placeholder = "1)"></input></td>
+        </tr>
+      </table>
+      <table class = "table table-bordered">
+        <tr>
+          <th class = "longtd" colspan="6">Evaluate the Faculty's/ Speaker's performance (write and tick your evaluation)</th>
+        </tr>
+        <tr>
+          <td>4(ii)</td>
+          <th class = "subhead" width = "50px">S.No</td>
+          <th class = "subhead" width = "300px">Faculty's Name</td>
+          <th class = "subhead" width = "600px">Faculty's Rating</td>
+        </tr>
+        <tr>
+          <td width = "50px"></td>
+          <td><input size = "2" name = "sno1"></topic></td>
+          <td><input size = "24" name = "faculty1"></topic></td>
+          <td width = "600px"><div class = "bt"><input type="radio" name="facultyrating1" value="Excellent"> Excellent</div><div class = "bt"><input type="radio" name="facultyrating1" value="Very Good"> Very Good</div><div class = "bt"><input type="radio" name="facultyrating1" value="Good"> Good</div><div class = "bt"><input type="radio" name="facultyrating1" value="Poor"> Poor</div></td>
+        </tr>
+        <tr>
+        <tr>
+          <td width = "50px"></td>
+          <td><input size = "2" name = "sno2"></topic></td>
+          <td><input size = "24" name = "faculty2"></topic></td>
+          <td width = "600px"><div class = "bt"><input type="radio" name="facultyrating2" value="Excellent"> Excellent</div><div class = "bt"><input type="radio" name="facultyrating2" value="Very Good"> Very Good</div><div class = "bt"><input type="radio" name="facultyrating2" value="Good"> Good</div><div class = "bt"><input type="radio" name="facultyrating2" value="Poor"> Poor</div></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <th class = "longtd" colspan="5">To what extent are you satisfied with the quality of the following (only if applicable)</th>
+        </tr>
+      </table>
+      <table class = "table table-bordered">
+        <tr>
+          <td width = "50px">A</td>
+          <td class = "item">Accommodation</td>
+          <td width = "510px"><div class = "bt"><input type="radio" name="sa" value="Fully"> Fully</div><div class = "bt"><input type="radio" name="sa" value="To a large extent"> To a large extent</div><div class = "bt"><input type="radio" name="sa" value="To a limited extent"> To a limited extent</div><div class = "bt"><input type="radio" name="sa" value="Not at all"> Not at all</div></td>
+        </tr>
+        <tr>
+          <td width = "50px">B</td>
+          <td class = "item">Food</td>
+          <td width = "510px"><div class = "bt"><input type="radio" name="sb" value="Fully"> Fully</div><div class = "bt"><input type="radio" name="sb" value="To a large extent"> To a large extent</div><div class = "bt"><input type="radio" name="sb" value="To a limited extent"> To a limited extent</div><div class = "bt"><input type="radio" name="sb" value="Not at all"> Not at all</div></td>
+        </tr>
+        <tr>
+          <td width = "50px">C</td>
+          <td class = "item">Room Service & other Hotel facilities </td>
+          <td width = "510px"><div class = "bt"><input type="radio" name="sc" value="Fully"> Fully</div><div class = "bt"><input type="radio" name="sc" value="To a large extent"> To a large extent</div><div class = "bt"><input type="radio" name="sc" value="To a limited extent"> To a limited extent</div><div class = "bt"><input type="radio" name="sc" value="Not at all"> Not at all</div></td>
+        </tr>
+        <tr>
+          <td width = "50px">D</td>
+          <td class = "item">Folder & writing material</td>
+          <td width = "510px"><div class = "bt"><input type="radio" name="sd" value="Fully"> Fully</div><div class = "bt"><input type="radio" name="sd" value="To a large extent"> To a large extent</div><div class = "bt"><input type="radio" name="sb" value="To a limited extent"> To a limited extent</div><div class = "bt"><input type="radio" name="sd" value="Not at all"> Not at all</div></td>
+        </tr>
+        <tr>
+          <td width = "50px">E</td>
+          <td class = "item">Administrative arrangement of NPC</td>
+          <td width = "510px"><div class = "bt"><input type="radio" name="se" value="Fully"> Fully</div><div class = "bt"><input type="radio" name="se" value="To a large extent"> To a large extent</div><div class = "bt"><input type="radio" name="se" value="To a limited extent"> To a limited extent</div><div class = "bt"><input type="radio" name="se" value="Not at all"> Not at all</div></td>
+        </tr>
+        <tr>
+          <td width = "50px">6</td>
+          <td class = "item">Whether Audio-Visual aids were used? <div>(If yes, evaluate its use)</div> </td>
+          <td width = "510px">
+            <div class = "bt"><input type="radio" name="s6" class = "yes" value="Yes"> Yes</div><div class = "bt"><input type="radio" name="s6" class = "no" value="No"> No</div>
+            <div class = " yesno bt"><input type="radio" name="s6" value="Excellent"> Excellent</div><div class = "yesno bt"><input type="radio" name="s6" value="Very Good"> Very Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Good"> Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Adequate"> Adequate</div><div class = "yesno bt"><input type="radio" name="s6" value="Poor"> Poor</div></td>
+        </tr>
+        <tr>
+          <td width = "50px">7</td>
+          <td class = "item">Your Overall impression of the course</td>
+          <td width = "510px"><div class = "bt"><input type="radio" name="s7" value="Excellent"> Excellent</div><div class = "bt"><input type="radio" name="s7" value="Very Good"> Very Good</div><div class = "bt"><input type="radio" name="s7" value="Good"> Good</div><div class = "bt"><input type="radio" name="s7" value="Fair"> Fair</div><div class = "bt"><input type="radio" name="s7" value="Poor"> Poor</div></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <th class = "longtd" colspan="5">Please indicate the new learning and your take away from the program (Your message with your name may be included in the e-magazine and Annual Report of NPC</th>
+        </tr>
+        <tr>
+          <td colspan = "6"><textarea name = "remark"></textarea></td>
+      </table>
+
+    </div>
+
+    <center><input type = "submit" name = "submit"></input></center>
+
+  </form>
+
+</div>
+
+</body>
+
+<script>
+
+  $(document).ready(function()
+    {
+        $(".yes").click(function()
+        {
+            $(".yesno").show();
+      });
+        $(".no").click(function()
+        {
+            $(".yesno").hide();
+      });
+    });
+
+</script>
+
+
+</html>

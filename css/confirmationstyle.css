@@ -1,0 +1,77 @@
+.mainHeading
+{
+	text-align: center;
+	color: #003466;
+}
+
+.mainHeading1
+{
+	text-align: center;
+	color: black;
+}
+
+.heading1
+{
+	margin-top: -5px;
+	font-size: 40px;
+	margin-bottom: -15px;
+}
+
+img
+{
+	width: 100px;
+	height: 100px;
+}
+
+.subh1
+{
+	font-size: 18px;
+}
+
+.head2
+{
+	margin-top: 50px;
+}
+
+.head2 p
+{
+	font-size: 18px;
+	margin-top: -15px;
+}
+
+body
+{
+	background: #EEEEEE;
+}
+
+.information
+{
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	font-size: 40px;
+}
+
+.wrapper
+{
+	margin-top: 30px;
+}
+
+.value
+{
+	margin-top: 30px;
+}
+
+.link
+{
+	text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active
+{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
