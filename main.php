@@ -8,8 +8,8 @@ function clean_text($string)
   return $string;
 }
 
-$programme = '';$duration = '';$coordinator = '';$name = '';$designation = '';$organization = '';$mobile = '';$s1 = '';$s2 = '';$s3 = '';$topicuseful = '';$topicusefulby = '';$topicnotuseful = '';$topicnotusefulby = '';$newtopic = '';$sno1 = '';$faculty1 = '';$facultyrating1 = '';$sno2 = '';$faculty2 = '';$facultyrating2 = '';$sa = '';$sb = '';
-$sc = '';$sd = '';$se = '';$s6 = '';$s7 = '';$remark = '';
+$programme = '';$duration = '';$coordinator = '';$name = '';$designation = '';$organization = '';$mobile = '';$nationality = '';$s1 = '';$s2 = '';$s3 = '';$topicuseful1 = '';$topicusefulby1 = '';$topicnotuseful1 = '';$topicnotusefulby1 = '';$topicuseful2 = '';$topicusefulby2 = '';$topicnotuseful2 = '';$topicnotusefulby2 = '';$topicuseful3 = '';$topicusefulby3 = '';$topicnotuseful3 = '';$topicnotusefulby3 = '';$topicuseful4 = '';$topicusefulby4 = '';$topicnotuseful4 = '';$topicnotusefulby4 = '';$newtopic = '';$faculty1 = '';$facultyrating1 = '';$faculty2 = '';$facultyrating2 = '';$faculty3 = '';$facultyrating3 = '';$faculty4 = '';$facultyrating4 = '';$sa = '';$sb = '';
+$sc = '';$sd = '';$se = '';$s6 = '';$s7 = '';$remark = '';$extra = '';
 
 if(!empty($_POST["programme"]))
 {
@@ -39,6 +39,11 @@ if(!empty($_POST["mobile"]))
 {
     $mobile = clean_text($_POST["mobile"]);
 }
+
+if(!empty($_POST["nationality"]))
+{
+    $nationality = clean_text($_POST["nationality"]);
+}
 if(!empty($_POST["s1"]))
 {
     $s1 = clean_text($_POST["s1"]);
@@ -51,34 +56,74 @@ if(!empty($_POST["s3"]))
 {
     $s3 = clean_text($_POST["s3"]);
 }
-if(!empty($_POST["topicuseful"]))
+if(!empty($_POST["topicuseful1"]))
 {
-    $topicuseful = clean_text($_POST["topicuseful"]);
+    $topicuseful1 = clean_text($_POST["topicuseful1"]);
 }
-if(!empty($_POST["topicusefulby"]))
+if(!empty($_POST["topicusefulby1"]))
 {
-    $topicusefulby = clean_text($_POST["topicusefulby"]);
+    $topicusefulby1 = clean_text($_POST["topicusefulby1"]);
 }
-if(!empty($_POST["topicnotuseful"]))
+if(!empty($_POST["topicnotuseful1"]))
 {
-    $topicnotuseful = clean_text($_POST["topicnotuseful"]);
+    $topicnotuseful1 = clean_text($_POST["topicnotuseful1"]);
 }
-if(!empty($_POST["topicnotusefulby"]))
+if(!empty($_POST["topicnotusefulby1"]))
 {
-    $topicnotusefulby = clean_text($_POST["topicnotusefulby"]);
+    $topicnotusefulby1 = clean_text($_POST["topicnotusefulby1"]);
 }
-if(!empty($_POST["newtopic"]))
+
+if(!empty($_POST["topicuseful2"]))
 {
-    $newtopic = clean_text($_POST["newtopic"]);
+    $topicuseful2 = clean_text($_POST["topicuseful2"]);
 }
-if(!empty($_POST["sno1"]))
+if(!empty($_POST["topicusefulby2"]))
 {
-    $sno1 = clean_text($_POST["sno1"]);
+    $topicusefulby2 = clean_text($_POST["topicusefulby2"]);
 }
-if(!empty($_POST["sno2"]))
+if(!empty($_POST["topicnotuseful2"]))
 {
-    $sno2 = clean_text($_POST["sno2"]);
+    $topicnotuseful2 = clean_text($_POST["topicnotuseful2"]);
 }
+if(!empty($_POST["topicnotusefulby2"]))
+{
+    $topicnotusefulby2 = clean_text($_POST["topicnotusefulby2"]);
+}
+
+if(!empty($_POST["topicuseful3"]))
+{
+    $topicuseful3 = clean_text($_POST["topicuseful3"]);
+}
+if(!empty($_POST["topicusefulby3"]))
+{
+    $topicusefulby3 = clean_text($_POST["topicusefulby3"]);
+}
+if(!empty($_POST["topicnotuseful3"]))
+{
+    $topicnotuseful3 = clean_text($_POST["topicnotuseful3"]);
+}
+if(!empty($_POST["topicnotusefulby3"]))
+{
+    $topicnotusefulby3 = clean_text($_POST["topicnotusefulby3"]);
+}
+
+if(!empty($_POST["topicuseful4"]))
+{
+    $topicuseful4 = clean_text($_POST["topicuseful4"]);
+}
+if(!empty($_POST["topicusefulby4"]))
+{
+    $topicusefulby4 = clean_text($_POST["topicusefulby4"]);
+}
+if(!empty($_POST["topicnotuseful4"]))
+{
+    $topicnotuseful4 = clean_text($_POST["topicnotuseful4"]);
+}
+if(!empty($_POST["topicnotusefulby1"]))
+{
+    $topicnotusefulby4 = clean_text($_POST["topicnotusefulby4"]);
+}
+
 if(!empty($_POST["faculty1"]))
 {
     $faculty1 = clean_text($_POST["faculty1"]);
@@ -87,6 +132,14 @@ if(!empty($_POST["faculty2"]))
 {
     $faculty2 = clean_text($_POST["faculty2"]);
 }
+if(!empty($_POST["faculty3"]))
+{
+    $faculty3 = clean_text($_POST["faculty3"]);
+}
+if(!empty($_POST["faculty4"]))
+{
+    $faculty4 = clean_text($_POST["faculty4"]);
+}
 if(!empty($_POST["facultyrating1"]))
 {
     $facultyrating1 = clean_text($_POST["facultyrating1"]);
@@ -94,6 +147,14 @@ if(!empty($_POST["facultyrating1"]))
 if(!empty($_POST["facultyrating2"]))
 {
     $facultyrating2 = clean_text($_POST["facultyrating2"]);
+}
+if(!empty($_POST["facultyrating3"]))
+{
+    $facultyrating3 = clean_text($_POST["facultyrating3"]);
+}
+if(!empty($_POST["facultyrating4"]))
+{
+    $facultyrating4 = clean_text($_POST["facultyrating4"]);
 }
 if(!empty($_POST["sa"]))
 {
@@ -127,10 +188,14 @@ if(!empty($_POST["remark"]))
 {
     $remark = clean_text($_POST["remark"]);
 }
+if(!empty($_POST["extra"]))
+{
+    $extra = clean_text($_POST["extra"]);
+}
 
 
 $stringfile = 'FeedbackForms/'.$name.'.pdf';
-//include 'excel.php';
+include 'excel.php';
 include 'formtopdf.php';
 //include 'generateReport.php';
 header('Location: confirmation.php?name='.urlencode($stringfile));

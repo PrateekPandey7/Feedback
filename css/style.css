@@ -1,16 +1,29 @@
-.mainheading
+.mainHeading
 {
 	text-align: center;
 	color: #003466;
-	font-size: 30px;
 }
-input[type = "submit"]
+
+.heading1
+{
+	margin-top: -5px;
+	font-size: 30px;
+	margin-bottom: -15px;
+}
+
+.subh1
+{
+	font-size: 18px;
+}
+
+input[type = "submit"], input[type = "button"]
 {
 	width: 100px;
 	height: 50px;
 	background: #91A4C4;
 	font-size: 16px;
 	font-weight: bold;
+	margin-left: -20px;
 	font-family: sans-serif,Arial;
 	color: black;
 	outline: none;
@@ -19,6 +32,11 @@ input[type = "submit"]
 	border: 0px;
 	cursor: pointer;
 	box-shadow: 10px 10px;
+}
+
+.f2,.f3,.f4,.tu2,.tu3,.tu4,.tnu2,.tnu3,.tnu4
+{
+	display: none;
 }
 
 .topic input
@@ -35,7 +53,7 @@ input[type = "submit"]:hover
 
 p
 {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 img
@@ -44,12 +62,69 @@ img
 	height: 60px;
 }
 
-@media (min-width: 1200px) {
+@media only screen and (max-width: 800px) {
     .container
+  	{
+    	width: 600px;    
+  	}
+  	
+    .remark textarea
     {
-        max-width: 940px;
+      width: 500px;
     }
+    .extra textarea
+    {
+      width: 500px;
+    }
+    .suggest textarea
+    {
+      width: 200px;
+    }
+  	.prog input
+  	{
+      margin-left: -200px;
+      width: 250px;
+  	}
+  	label
+  	{
+      margin-right:-20px;
+  	}
+  	.topicevaluate input[type="text"]
+  	{
+      width: 180px;
+  	}
 }
+
+.sp
+{
+  display: flex;
+  justify-content: left;
+}
+
+@media screen and (min-width: 900px) {
+    .container 
+  	{
+        max-width: 850px;
+    }
+  	.remark textarea
+    {
+      width: 800px;
+    }
+    .extra textarea
+    {
+      width: 800px;
+    }
+    .suggest textarea
+    {
+      width: 400px;
+    }
+  	  
+}
+
+table
+{
+  border: none;
+}  
 
 form
 {
@@ -82,7 +157,7 @@ form div
 
 .personal
 {
-	margin-bottom: -10px
+	margin-top: -10px
 }
 
 input
@@ -102,6 +177,7 @@ input
 	float: left;
 	width: 170px;
 	margin-right: 10px;
+	margin-bottom: -6px;
 }
 
 input[type="radio"]
@@ -109,10 +185,9 @@ input[type="radio"]
 	margin-right: 5px;
 }
 
-textarea
+.topicevaluate textarea
 {
-	width: 880px;
-	height: 100px;
+  width: 400px;
 }
 
 th
@@ -137,7 +212,7 @@ td
 
 .longtd
 {
-	text-align: center;
+	text-align: left;
 }
 
 .item
