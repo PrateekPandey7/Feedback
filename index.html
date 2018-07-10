@@ -30,6 +30,8 @@
 
     <div>
       <hr>
+      <strong><center><p class = "longtd1 personal1">PROGRAMME INFORMATION</p></center></strong>
+      <hr>
       <div class = "prog">
         <label>Programme Name: <span style="color:red">  *</span></label>
         <input name = "programme" required></input>
@@ -49,7 +51,8 @@
 
 
     <div>
-      <strong><center><p class = "longtd personal">PERSONAL INFORMATION</p></center></strong>
+      <strong><center><p class = "longtd1 personal">PERSONAL INFORMATION</p></center></strong>
+      <hr>
       <div class = "prog"><label>Name of the Participant:</label>
         <input name = "name"></input></div>
       <div class = "prog"><label>Designation:</label>
@@ -58,8 +61,6 @@
         <input name = "organization" required></input></div>
       <div class = "prog"><label>Contact No./ Mobile No: </label>
         <input name = "mobile" placeholder = "Mobile"></input></div>
-      <div class = "prog"><label>Nationality: </label>
-        <input name = "nationality"></input></div>
 
     </div>
 
@@ -67,7 +68,7 @@
       <table class = "table table-bordered">
         <thead>
           <tr>
-            <th class = "longtd" colspan="6">FEEDBACK</th>
+            <th class = "longtd1" colspan="6">FEEDBACK</th>
           </tr>
           <th>S.No</th>
           <th>Item</th>
@@ -98,9 +99,9 @@
           <th class = "longtd" colspan="6">4(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluate the topics of the Programme</th>
         </tr>
         <tr>
-          <th class = "subhead">Topics found most useful</th>
-          <th class = "subhead">By (Faculty Name)</th>
-          <th class = "subhead"></th>
+          <td class = "subhead">Topics found most useful</td>
+          <td class = "subhead">By (Faculty Name)</td>
+          <td class = "subhead"></td>
         </tr>
         <tr class = "topicevaluate">
             <td><input type = "text" name = "topicuseful1"></td>
@@ -123,9 +124,9 @@
             <td></td>
         </tr>
         <tr>
-          <th class = "subhead">Topics not found useful</th>
-          <th class = "subhead">By (Faculty Name)</th>
-          <th class = "subhead"></th>
+          <td class = "subhead">Topics not found useful</td>
+          <td class = "subhead">By (Faculty Name)</td>
+          <td class = "subhead"></td>
         </tr>
         <tr class = "topicevaluate">
             <td><input type = "text" name = "topicnotuseful1"></td>
@@ -152,12 +153,12 @@
 
       <table class = "evaluate table">
         <tr>
-          <th class = "longtd" colspan="5">4(ii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluate the Faculty's/ Speaker's performance (write and tick your evaluation)</th>
+          <th class = "longtd" colspan="5">4(ii)&nbsp;&nbsp;&nbsp;&nbsp;Evaluate the Faculty's/ Speaker's performance (write and tick your evaluation)</th>
         </tr>
         <tr>
-          <th class = "subhead">Faculty's Name</th>
-          <th class = "subhead">Faculty's Rating</th>
-          <th class = "subhead"></th>
+          <td class = "subhead">Faculty's Name</td>
+          <td class = "subhead">Faculty's Rating</td>
+          <td class = "subhead"></td>
         </tr>
         <tr>
           <td class = "f1"><input name = "faculty1" ></td>
@@ -227,21 +228,19 @@
       
       <table class = "extra table table-bordered">
         <tr>
-          <td>8</td>
-          <th class = "longtd" colspan="3">Any extra remark or information you would like to give</th>
+          <th class = "longtd" colspan="3">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can add any extra remark or information that you would like to give</th>
         </tr>
         <tr>
-          <td colspan = "4"><textarea name = "extra" ></textarea></td>
+          <td colspan = "3"><textarea name = "extra" ></textarea></td>
         </tr>
       </table>
       
       <table class = "remark table table-bordered">
         <tr>
-          <td>9</td>
-          <th class = "longtd" colspan="3">Please indicate the new learning and your take away from the program (Your message with your name may be included in the e-magazine and Annual Report of NPC</th>
+          <td class = "longtd" colspan="3"><strong>9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the new learning and your take away from the program </strong><div class ="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Your message with your name may be included in NPC Publications)</div></td>
         </tr>
         <tr>
-          <td colspan = "4"><textarea name = "remark" ></textarea></td>
+          <td colspan = "3"><textarea name = "remark" ></textarea></td>
         </tr>
       </table>
 

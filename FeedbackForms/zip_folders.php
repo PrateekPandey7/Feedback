@@ -1,13 +1,12 @@
 <?php
 
-    $zipname = 'FeedbackReports.zip';
+    $zipname = 'FeedbackReport.zip';
     $zip = new ZipArchive;
     $zip->open($zipname, ZipArchive::CREATE);
     if ($handle = opendir('.')) 
     {
       while (false !== ($entry = readdir($handle))) 
       {
-        echo "hi";
         if ($entry != "." && $entry != ".." && strstr($entry, '.pdf')) //!strstr($entry,'.php') && !strstr($entry,'.zip')) 
         {
             $zip->addFile($entry);
@@ -19,8 +18,8 @@
     $zip->close();
 
     header('Content-Type: application/zip');
-    header("Content-Disposition: attachment; filename= $zipname");
-    header('Content-Length: ' . filesize($zipname));
+    //header('Content-Length: ' . filesize($zipname));
+    //header("Content-Disposition: attachment; filename= $zipname");
     header("Location: $zipname");
 
 ?>

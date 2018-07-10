@@ -39,11 +39,6 @@ if(!empty($_POST["mobile"]))
 {
     $mobile = clean_text($_POST["mobile"]);
 }
-
-if(!empty($_POST["nationality"]))
-{
-    $nationality = clean_text($_POST["nationality"]);
-}
 if(!empty($_POST["s1"]))
 {
     $s1 = clean_text($_POST["s1"]);

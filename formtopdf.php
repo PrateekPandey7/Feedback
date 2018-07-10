@@ -67,13 +67,6 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$mobile);
 $pdf->Ln(10);
 
-//Nationality
-$pdf->SetFont('Arial','B',14);
-$pdf->Cell(80,50,'Nationality :');
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$nationality);
-$pdf->Ln(10);
-
 //S1
 $pdf->SetFont('Arial','',14);
 $pdf->Ln(20);

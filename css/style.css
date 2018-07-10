@@ -108,11 +108,11 @@ img
     }
   	.remark textarea
     {
-      width: 800px;
+      width: 780px;
     }
     .extra textarea
     {
-      width: 800px;
+      width: 780px;
     }
     .suggest textarea
     {
@@ -160,6 +160,11 @@ form div
 	margin-top: -10px
 }
 
+.personal1
+{
+	margin-top: -7px
+}
+
 input
 {
 	margin-top: 10px;
@@ -197,7 +202,7 @@ th
 
 .subhead
 {
-	text-align: center;
+	text-align: left;
 }
 
 .yesno
@@ -213,6 +218,11 @@ td
 .longtd
 {
 	text-align: left;
+}
+
+.longtd1
+{
+	text-align: center;
 }
 
 .item
