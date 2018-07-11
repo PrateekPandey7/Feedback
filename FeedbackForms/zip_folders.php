@@ -1,13 +1,13 @@
 <?php
-
-    $zipname = 'FeedbackReport.zip';
+    $prog = $_GET["name"];
+    $zipname = $prog.'.zip';
     $zip = new ZipArchive;
     $zip->open($zipname, ZipArchive::CREATE);
     if ($handle = opendir('.')) 
     {
       while (false !== ($entry = readdir($handle))) 
       {
-        if ($entry != "." && $entry != ".." && strstr($entry, '.pdf')) //!strstr($entry,'.php') && !strstr($entry,'.zip')) 
+        if ($entry != "." && $entry != ".." && strstr($entry, '('.$prog.')'.'.pdf')) //!strstr($entry,'.php') && !strstr($entry,'.zip')) 
         {
             $zip->addFile($entry);
         }

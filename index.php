@@ -1,4 +1,14 @@
-n<!DOCTYPE html>
+<?php
+  
+  $token = $_GET["name"];
+  $arr = explode("/", $token,3);
+  $code = $arr[0];
+  $coord = $arr[1];
+  $progname = $arr[2];
+  $point = 'main.php?name='.urlencode($progname);
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Feedback Form</title>
@@ -22,7 +32,7 @@ n<!DOCTYPE html>
       
   </div>
 
-  <form method = "post" action = "main.php">
+  <form method = "post" action = '<?php echo $point ?>'>
   
     <p>All fields marked with <span style="color:red">  *</span> are compulsory</p>
     <span class = "sp" >Note: We attach a great significance to your evaluation. This would help us to rigorously evaluate the course. Please, therefore, be as candid as you can. Rest assured that your evaluation will be kept strictly confidential. You need not disclose your identity if you wish although it may be more helpful if you do.</span>
@@ -34,7 +44,7 @@ n<!DOCTYPE html>
       <hr>
       <div class = "prog">
         <label>Programme Name: <span style="color:red">  *</span></label>
-        <input name = "programme" required></input>
+        <?php echo $progname ?>
       </div>
   
       <div class = "prog">
@@ -44,7 +54,7 @@ n<!DOCTYPE html>
   
     <div class = "prog"> 
       <label>Programme Coordinator:</label>
-        <input name = "coordinator"></input>
+        <?php echo $coord ?>
   </div>
         <hr>
     </div>
@@ -57,8 +67,14 @@ n<!DOCTYPE html>
         <input name = "name"></input></div>
       <div class = "prog"><label>Designation:</label>
         <input name = "designation" ></input></div>
+      <div class = "prog"><label>Designation Level:</label>
+          <select class = "dlevel" name = "level">
+          <option disabled selected=""></option><option value = "Junior Management">Junior Management</option><option value = "Middle Management">Middle Management</option><option value="Higher Management">Higher Management</option></select></div>
       <div class = "prog"><label>Name of the Organization: <span style="color:red">  *</span></label>
         <input name = "organization" required></input></div>
+      <div class = "prog"><label>Type Of Organization:</label>
+          <select class = "olevel" name = "type">
+          <option disabled selected=""></option><option value="Government">Government</option><option value="PSU/Gov">PSU/Gov</option><option value="Private">Private</option></select></div>
       <div class = "prog"><label>Contact No./ Mobile No: </label>
         <input name = "mobile" placeholder = "Mobile"></input></div>
 
@@ -90,13 +106,18 @@ n<!DOCTYPE html>
             <td class = "item">How was the quality and utility of course material and lecture notes circulated?<span style="color:red">  *</span></td>
             <td><div class = "bt"><input type="radio" name="s3" value="Excellent" required> Excellent</div><div class = "bt"><input type="radio" name="s3" value="Very Good"> Very Good</div><div class = "bt"><input type="radio" name="s3" value="Good"> Good</div><div class = "bt"><input type="radio" name="s3" value="Fair"> Fair</div><div class = "bt"><input type="radio" name="s3" value="Poor"> Poor</div></td>
           </tr>
+          <tr>
+            <td>4</td>
+            <td class = "item">What was the level of learning outcome of this program?<span style="color:red">  *</span></td>
+            <td><div class = "bt"><input type="radio" name="s4" value="Remembering" required> Remembering</div><div class = "bt"><input type="radio" name="s4" value="Understanding"> Understanding</div><div class = "bt"><input type="radio" name="s4" value="Applying"> Applying</div><div class = "bt"><input type="radio" name="s4" value="Analyzing"> Analyzing</div><div class = "bt"><input type="radio" name="s4" value="Evaluating"> Evaluating</div><div class = "bt"><input type="radio" name="s4" value="Creating"> Creating</div></td>
+          </tr>
         </tbody>
       </table>
       
 
       <table class = "table">
         <tr>
-          <th class = "longtd" colspan="6">4(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluate the topics of the Programme</th>
+          <th class = "longtd" colspan="6">5(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluate the topics of the Programme</th>
         </tr>
         <tr>
           <td class = "subhead">Topics found most useful</td>
@@ -153,7 +174,7 @@ n<!DOCTYPE html>
 
       <table class = "evaluate table">
         <tr>
-          <th class = "longtd" colspan="5">4(ii)&nbsp;&nbsp;&nbsp;&nbsp;Evaluate the Faculty's/ Speaker's performance (write and tick your evaluation)</th>
+          <th class = "longtd" colspan="5">5(ii)&nbsp;&nbsp;&nbsp;&nbsp;Evaluate the Faculty's/ Speaker's performance (write and tick your evaluation)</th>
         </tr>
         <tr>
           <td class = "subhead">Faculty's Name</td>
@@ -185,7 +206,7 @@ n<!DOCTYPE html>
 
       <table class = "table table-bordered">
         <tr>
-          <th class = "longtd" colspan="3">5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To what extent are you satisfied with the quality of the following (only if applicable)</th>
+          <th class = "longtd" colspan="3">6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To what extent are you satisfied with the quality of the following (only if applicable)</th>
         </tr>
         <tr>
           <td width = "50px">A</td>
@@ -213,14 +234,14 @@ n<!DOCTYPE html>
           <td width = "417px"><div class = "bt"><input type="radio" name="se" value="Fully" > Fully</div><div class = "bt"><input type="radio" name="se" value="To a large extent"> To a large extent</div><div class = "bt"><input type="radio" name="se" value="To a limited extent"> To a limited extent</div><div class = "bt"><input type="radio" name="se" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
-          <td width = "50px">6</td>
+          <td width = "50px">7</td>
           <td class = "item">Whether Audio-Visual aids were used? <div>(If yes, evaluate its use)</div> </td>
           <td width = "417px">
             <div class = "bt"><input type="radio" name="s6" class = "yes" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="s6" class = "no" value="No"> No</div>
             <div class = " yesno bt"><input type="radio" name="s6" value="Excellent"> Excellent</div><div class = "yesno bt"><input type="radio" name="s6" value="Very Good"> Very Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Good"> Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Adequate"> Adequate</div><div class = "yesno bt"><input type="radio" name="s6" value="Poor"> Poor</div></td>
         </tr>
         <tr>
-          <td width = "50px">7</td>
+          <td width = "50px">8</td>
           <td class = "item">Your Overall impression of the course</td>
           <td width = "417px"><div class = "bt"><input type="radio" name="s7" value="Excellent" > Excellent</div><div class = "bt"><input type="radio" name="s7" value="Very Good"> Very Good</div><div class = "bt"><input type="radio" name="s7" value="Good"> Good</div><div class = "bt"><input type="radio" name="s7" value="Fair"> Fair</div><div class = "bt"><input type="radio" name="s7" value="Poor"> Poor</div></td>
         </tr>
@@ -228,7 +249,7 @@ n<!DOCTYPE html>
       
       <table class = "extra table table-bordered">
         <tr>
-          <th class = "longtd" colspan="3">8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can add any extra remark or information that you would like to give</th>
+          <th class = "longtd" colspan="3">9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can add any extra remark or information that you would like to give</th>
         </tr>
         <tr>
           <td colspan = "3"><textarea name = "extra" ></textarea></td>
@@ -237,7 +258,7 @@ n<!DOCTYPE html>
       
       <table class = "remark table table-bordered">
         <tr>
-          <td class = "longtd" colspan="3"><strong>9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the new learning and your take away from the program </strong><div class ="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Your message with your name may be included in NPC Publications)</div></td>
+          <td class = "longtd" colspan="3"><strong>10&nbsp;&nbsp;&nbsp;&nbsp;Please indicate the new learning and your take away from the program </strong><div class ="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Your message with your name may be included in NPC Publications)</div></td>
         </tr>
         <tr>
           <td colspan = "3"><textarea name = "remark" ></textarea></td>

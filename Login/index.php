@@ -29,31 +29,38 @@ include 'login.php';
 		<form method = "post">
 			<?php echo $message
 			?>
-			<div class = "input uname">
-				<input type = "text" name = "username" id = "username" placeholder ="Username" required />
-				<i class = "fa fa-user"></i>
-			</div>
-			<div class = "input pass">
-				<input type = "password" name = "password" id = "password" placeholder ="Password" required />
+			<div class = "input username">
+				<input type = "text" name = "user" id = "user" placeholder ="Username"/>
 				<i class = "fa fa-lock"></i>
 			</div>
-			<div class = "input email">
-				<input type = "email" name = "email" id = "email" placeholder ="Email" required />
-				<i class = "fa fa-envelope"></i>
+			<div class = "input pass">
+				<input type = "password" name = "password" id = "password" placeholder ="Passcode" required />
+				<i class = "fa fa-lock"></i>
 			</div>
-			<!--<center><a href = "signup.php" style = "color:gray; font-size:14px; text-decoration:none; font-family:sans-serif; margin-bottom:10px;">New User</a></center>-->
 			<div>
 				<input type = "submit" name = "login" id = "login" value = "Log in" />
 			</div>
-			<!--<div>
-				<center>OR</center>
+			<br>
+			<div>
+				<input type = "button" name = "logincord" class = "logincord" id = "logincord" value = "Log in as Coordinator" />
 			</div>
-			<div class="g-signin2" data-onsuccess="onSignIn" theme = "dark"></div>-->
 		</form>
 	</section>
 
 <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type = "text/javascript" src = "index.js"> </script>
+<script>
+
+	$(document).ready(function()
+		{
+    		$(".logincord").click(function()
+    		{
+        		$(".logincord").hide();
+        		$(".username").show();
+    	});
+		});
+
+</script>
 
 </body>
 </html>

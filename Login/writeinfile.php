@@ -6,12 +6,12 @@
 	{
 		$u =  $_POST["username"];
 		$p =  $_POST["password"];
-		$e =  $_POST["email"];
-		$string = $u.$p.$e;
-		$r = hash('sha512', $string, false)."\n";
+		$topic = $_POST["topic"];
+		$t = substr($topic,0,3);
+		$string = substr($u,0,3).substr($p,0,3).substr($topic,0,3);
+		$r = hash('sha512', $string, false);
 		$myfile = fopen("database.txt","a") or die("Please try again Later");
-
-		$search = $r;
+		$search = substr($r,0,10).'/'.$u.'/'.$topic;
 		$lines = file('database.txt');
 		$flag = 0;
 		foreach($lines as $line)
@@ -24,8 +24,9 @@
 		}
 		if($flag == 0)
 		{
-			fwrite($myfile, $r);
-			$message = " New Account created";
+			fwrite($myfile, $search);
+
+			header('Location: download.php?name='.urlencode($search));
 		}
 		fclose($myfile);
 	}

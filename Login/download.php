@@ -1,4 +1,11 @@
-<?php include "home.php" ?>
+<?php 
+	$token = $_GET["name"];
+	$arr = explode("/", $token,3);
+	$code = $arr[0];
+	$coord = $arr[1];
+	$progname = $arr[2];
+	$file = $progname.'.csv';
+?>
 <html lang="en">
 	  
 	<head>
@@ -26,19 +33,20 @@
 			<div class = "value">
 				<div class="wrapper">
   					<span class="square individual">
-    				<a class = "link" href="logout.php">Logout</a>
+    				<a class = "link" <?php echo "href=logout.php?name=$token"?>>Delete This Account</a>
+  					</span>
+				</div>
+				<h3>The passcode is : <?php echo $code ?></h3>
+				<div class="wrapper">
+  					<span class="square individual">
+    				<a class = "link" <?php echo "href=../Excel/$file"?> target = '_blank'>Download Feedback Excel Report</a>
   					</span>
 				</div>
 				<div class="wrapper">
   					<span class="square individual">
-    				<a class = "link" href="../FeedbackForm.csv" target = '_blank'>Download Excel File</a>
+    				<a class = "link" <?php echo "href=../FeedbackForms/zip_folders.php?name=$progname"?> target = '_blank'>Download Feedback PDF Reports</a>
   					</span>
 				</div>
-				<div class="wrapper">
-  					<span class="square individual">
-    				<a class = "link" href="../FeedbackForms/zip_folders.php">Download All Reports</a>
-  					</span>
-				</div>	
 			</div>
 		</div>
 

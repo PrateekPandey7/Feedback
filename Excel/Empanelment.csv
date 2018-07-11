@@ -1,0 +1,15 @@
+Duration,Name,Designation,DesignationLevel,Organization,OrganizationType,mobile,"To what extent is this programme useful to you in your job or personal growth?","How far have you been benefited from interaction with the fellow participants?","How was the quality and utility of course material and lecture notes circulated?","What was the level of learning outcome of this program?",Topicuseful,Topicnotuseful,FacultyRating,Accommodation,Food,"Room Service & other Hotel facilities","Folder & writing material","Administrative arrangement of NPC","Whether Audio-Visual aids were used?","Your Overall impression of the course",Remark,Extra
+"Dec 06-10, 2017","Prateek Pandey",Student,,"Coding Ninjas",,9873289855,"Very Useful",Substantially,Excellent,Applying,"(Recursion- By -Manisha Khattar)(- By -)(- By -)(- By -)","(Backtracking- By -Ankush Singla)(- By -)(- By -)(- By -)","(Manisha Khattar-Excellent)(-)(-)(-)",Fully,"To a large extent","To a large extent",Fully,Fully,No,"Very Good","if(!empty($_POST[&quot;designation&quot;]))
+{
+    $designation = clean_text($_POST[&quot;designation&quot;]);
+}","if(!empty($_POST[&quot;designation&quot;]))
+{
+    $designation = clean_text($_POST[&quot;designation&quot;]);
+}"
+"Dec 06-10, 2017","Prateek Pandey",Student,,"Coding Ninjas",,9873289855,"Very Useful",Substantially,Excellent,Applying,"(Recursion- By -Manisha Khattar)(- By -)(- By -)(- By -)","(Backtracking- By -Ankush Singla)(- By -)(- By -)(- By -)","(Manisha Khattar-Excellent)(-)(-)(-)",Fully,"To a large extent","To a large extent",Fully,Fully,No,"Very Good","if(!empty($_POST[&quot;designation&quot;]))
+{
+    $designation = clean_text($_POST[&quot;designation&quot;]);
+}","if(!empty($_POST[&quot;designation&quot;]))
+{
+    $designation = clean_text($_POST[&quot;designation&quot;]);
+}"

@@ -27,14 +27,12 @@ include "writeinfile.php"; ?>
 				<i class = "fa fa-user"></i>
 			</div>
 			<div class = "input pass">
-				<input type = "password" name = "password" id = "password" placeholder ="Password" required />
+				<input type = "password" name = "password" id = "password" placeholder ="Security Key" required />
 				<i class = "fa fa-lock"></i>
 			</div>
-			<div class = "input email">
-				<input type = "email" name = "email" id = "email" placeholder ="Email" required />
-				<i class = "fa fa-envelope"></i>
+			<div class = "input">
+				<input type = "text" name = "topic" id = "topic" placeholder ="Programme Name" required />
 			</div>
-			<center><a href = "index.php" style = "color:gray; font-size:14px; text-decoration:none; font-family:sans-serif; margin-bottom:10px;">Login</a></center>
 			<div>
 				<input type = "submit" name = "signup" id = "signup" value = "Sign Up" />
 			</div>
