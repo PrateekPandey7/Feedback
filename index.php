@@ -1,11 +1,12 @@
 <?php
   
   $token = $_GET["name"];
-  $arr = explode("/", $token,3);
+  $arr = explode("-", $token,3);
   $code = $arr[0];
   $coord = $arr[1];
   $progname = $arr[2];
-  $point = 'main.php?name='.urlencode($progname);
+  $string = $progname.'-'.$coord;
+  $point = 'main.php?name='.urlencode($string);
 ?>
 
 <!DOCTYPE html>

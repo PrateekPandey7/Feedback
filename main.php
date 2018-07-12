@@ -11,17 +11,9 @@ function clean_text($string)
 $programme = '';$duration = '';$coordinator = '';$name = '';$designation = '';$level = '';$type = '';$organization = '';$mobile = '';$nationality = '';$s1 = '';$s2 = '';$s3 = '';$s4 = '';$topicuseful1 = '';$topicusefulby1 = '';$topicnotuseful1 = '';$topicnotusefulby1 = '';$topicuseful2 = '';$topicusefulby2 = '';$topicnotuseful2 = '';$topicnotusefulby2 = '';$topicuseful3 = '';$topicusefulby3 = '';$topicnotuseful3 = '';$topicnotusefulby3 = '';$topicuseful4 = '';$topicusefulby4 = '';$topicnotuseful4 = '';$topicnotusefulby4 = '';$newtopic = '';$faculty1 = '';$facultyrating1 = '';$faculty2 = '';$facultyrating2 = '';$faculty3 = '';$facultyrating3 = '';$faculty4 = '';$facultyrating4 = '';$sa = '';$sb = '';
 $sc = '';$sd = '';$se = '';$s6 = '';$s7 = '';$remark = '';$extra = '';
 
-if(!empty($_POST["programme"]))
-{
-    $programme = clean_text($_POST["programme"]);
-}
 if(!empty($_POST["duration"]))
 {
     $duration = clean_text($_POST["duration"]);
-}
-if(!empty($_POST["coordinator"]))
-{
-    $coordinator = clean_text($_POST["coordinator"]);
 }
 if(!empty($_POST["name"]))
 {
@@ -200,7 +192,12 @@ if(!empty($_POST["extra"]))
     $extra = clean_text($_POST["extra"]);
 }
 
-
+$pn = substr($progname,0,strlen($progname));
+/*for($x = 0; $x < strlen($progname)-1; $x++)
+{
+    if($progname[$x] != ' ' || $progname[$x] != "\n")
+        $pn = $pn.$progname[$x];
+}   */
 $stringfile = 'FeedbackForms/'.$name.'('.$progname.')'.'.pdf';
 include 'Excel/excel.php';
 include 'formtopdf.php';

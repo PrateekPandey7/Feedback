@@ -1,10 +1,12 @@
 <?php 
 	$token = $_GET["name"];
-	$arr = explode("/", $token,3);
+	$arr = explode("-", $token,3);
 	$code = $arr[0];
 	$coord = $arr[1];
 	$progname = $arr[2];
-	$file = $progname.'.csv';
+	$token = $code.'-'.$coord.'-'.$progname;
+	$string = $progname.'-'.$coord;
+	$file = $string;
 ?>
 <html lang="en">
 	  
@@ -33,18 +35,18 @@
 			<div class = "value">
 				<div class="wrapper">
   					<span class="square individual">
-    				<a class = "link" <?php echo "href=logout.php?name=$token"?>>Delete This Account</a>
+    				<a class = "link" <?php echo "href=logout.php?name=".urlencode($token)?>>Delete This Account</a>
   					</span>
 				</div>
 				<h3>The passcode is : <?php echo $code ?></h3>
 				<div class="wrapper">
   					<span class="square individual">
-    				<a class = "link" <?php echo "href=../Excel/$file"?> target = '_blank'>Download Feedback Excel Report</a>
+    				<a class = "link" <?php echo "href=../Excel/downloadExcel.php?name=".urlencode($file)?> target = '_blank'>Download Feedback Excel Report</a>
   					</span>
 				</div>
 				<div class="wrapper">
   					<span class="square individual">
-    				<a class = "link" <?php echo "href=../FeedbackForms/zip_folders.php?name=$progname"?> target = '_blank'>Download Feedback PDF Reports</a>
+    				<a class = "link" <?php echo "href=../FeedbackForms/zip_folders.php?name=".urlencode($string)?> target = '_blank'>Download Feedback PDF Reports</a>
   					</span>
 				</div>
 			</div>

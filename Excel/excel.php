@@ -1,6 +1,5 @@
-<?php
-	
-	$filename = 'Excel/'.$progname . '.csv';
+<?php	
+	$filename = 'Excel/'.'('.$pn.')'.'.csv';
 	if(file_exists($filename) == 0)
 	{
 		$file_open = fopen($filename,"a");

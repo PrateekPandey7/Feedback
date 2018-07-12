@@ -1,7 +1,7 @@
 <?php
     $prog = $_GET["name"];
     echo $prog;
-    $zipname = $prog.'.zip';
+    $zipname = "Excel-".$prog.'.zip';
     echo $zipname;
     $zip = new ZipArchive;
     $zip->open($zipname, ZipArchive::CREATE);
@@ -9,7 +9,7 @@
     {
       while (false !== ($entry = readdir($handle))) 
       {
-        if ($entry != "." && $entry != ".." && strstr($entry, '('.$prog.')'.'.pdf')) //!strstr($entry,'.php') && !strstr($entry,'.zip')) 
+        if ($entry != "." && $entry != ".." && strstr($entry, '('.$prog.')'.'.csv')) //!strstr($entry,'.php') && !strstr($entry,'.zip')) 
         {
             $zip->addFile($entry);
         }

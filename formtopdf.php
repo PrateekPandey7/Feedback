@@ -193,6 +193,6 @@ $pdf->Ln(2);
 
 
 
-$target = 'FeedbackForms/'.$name.'('.$progname.')'.'.pdf';
+$target = 'FeedbackForms/'.$name.'('.$pn.')'.'.pdf';
 $pdf->Output($target,'F'); 
 ?>
