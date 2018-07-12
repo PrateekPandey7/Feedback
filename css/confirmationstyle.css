@@ -19,8 +19,8 @@
 
 img
 {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 }
 
 .subh1
@@ -31,6 +31,11 @@ img
 .head2
 {
 	margin-top: 50px;
+}
+
+.instruction p
+{
+	font-size: 20px;
 }
 
 .head2 p
@@ -53,7 +58,7 @@ body
 
 .wrapper
 {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .value

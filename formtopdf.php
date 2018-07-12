@@ -3,21 +3,23 @@ require('fpdf/fpdf.php');
 class PDF extends FPDF
 {
 
-	function Header()
+	/*function Header()
 	{
 	    $this->SetFont('Arial','B',15);
-	    $this->Cell(65);
-	    $this->Cell(70,10,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
+	    $this->Cell(200,10,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
 	    $this->Ln(3);
 	    $this->Cell(200,10,'Training Evaluation and Feedback Form',0,2,'C');
-	}
+	}*/
 
 }
 
 $pdf = new PDF();
 $pdf->AddPage();
 
-
+$pdf->SetFont('Arial','B',15);
+$pdf->Cell(200,10,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
+$pdf->Ln(3);
+$pdf->Cell(200,10,'Training Evaluation and Feedback Form',0,2,'C');
 //ProgrammeName
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Programme Name :');
@@ -32,9 +34,10 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$nameofcoordinator);
 $pdf->Ln(10);
 
-/*$pdf->SetFont('Arial','B',18);
-$pdf->Cell(80,50,'PERSONAL INFORMATION');
-$pdf->Ln(3);*/
+$pdf->SetFont('Arial','B',18);
+$pdf->Ln(30);
+$pdf->Cell(100,10,'PERSONAL INFORMATION',1,0,'C');
+$pdf->Ln(2);
 //Name
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Name of Participant:');
@@ -68,12 +71,11 @@ $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Email :');
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$email);
-$pdf->Ln(10);
 
-/*$pdf->SetFont('Arial','B',18);
-$pdf->Cell(80,50,'FEEDBACK');
-$pdf->Ln(3);*/
-$pdf->Ln(30);
+$pdf->SetFont('Arial','B',18);
+$pdf->Ln(40);
+$pdf->Cell(100,10,'FEEDBACK',1,0,'C');
+$pdf->Ln(3);
 //S1
 $pdf->SetFont('Arial','',14);
 $pdf->Ln(20);
@@ -102,7 +104,6 @@ $pdf->MultiCell(200,7,'4) What was the level of learning outcome of this program
 $pdf->SetFont('Arial','',12);
 $pdf->Cell(100,20,'Ans : ' . $s3);
 $pdf->Ln(2);
-$pdf->AddPage();
 $pdf->SetFont('Arial','',14);
 $pdf->Ln(20);
 $pdf->MultiCell(200,7,'5) Type of your organization?',0,'L',false);
@@ -155,7 +156,6 @@ $pdf->Cell(100,50,$faculty4 . ' :');
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$facultyrating4);
 $pdf->Ln(10);
-
 
 $pdf->AddPage();
 $pdf->SetFont('Arial','',14);

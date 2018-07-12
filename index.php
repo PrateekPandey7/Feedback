@@ -110,9 +110,9 @@
           </tr>
           <tr>
             <td>6</td>
-            <td class = "item">Your Operational Level?</td>
+            <td class = "item">Participant Hierarchy Level?</td>
             <td><select class = "dlevel" name = "level">
-                <option disabled selected="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option><option value = "Junior Management">Junior Management</option><option value = "Middle Management">Middle Management</option><option value="Higher Management">Higher Management</option></select>
+                <option disabled selected="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option><option value = "Junior Management">Junior Management</option><option value = "Middle Management">Middle Management</option><option value="Higher Management">Top/Senior Management</option></select>
               </td>
         </tbody>
       </table>
@@ -216,6 +216,7 @@
           <td class = "item">Whether Accommodation were provided? <div>(If yes, rate it)</div> </td>
           <td width = "417px">
              <div class = "bt"><input type="radio" name="sa" class = "yesa" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sa" class = "noa" value="No"> No</div>
+             <br><br>
              <div class = "yesnoa bt"><input type="radio" name="sa" value="Fully" > Fully</div><div class = "yesnoa bt"><input type="radio" name="sa" value="To a large extent"> To a large extent</div><div class = "yesnoa bt"><input type="radio" name="sa" value="To a limited extent"> To a limited extent</div><div class = "yesnoa bt"><input type="radio" name="sa" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
@@ -223,6 +224,7 @@
           <td class = "item">Whether Food were provided? <div>(If yes, rate it)</div> </td>
           <td width = "417px"> 
             <div class = "bt"><input type="radio" name="sb" class = "yesb" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sb" class = "nob" value="No"> No</div>
+            <br><br>
              <div class = "yesnob bt"><input type="radio" name="sb" value="Fully" > Fully</div><div class = "yesnob bt"><input type="radio" name="sb" value="To a large extent"> To a large extent</div><div class = "yesnob bt"><input type="radio" name="sb" value="To a limited extent"> To a limited extent</div><div class = "yesnob bt"><input type="radio" name="sb" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
@@ -230,6 +232,7 @@
           <td class = "item">Whether Room service and other hotel facilities were provided? <div>(If yes, rate it)</div> </td>
           <td width = "417px">
              <div class = "bt"><input type="radio" name="sc" class = "yesc" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sc" class = "noc" value="No"> No</div>
+             <br><br>
              <div class = "yesnoc bt"><input type="radio" name="sc" value="Fully" > Fully</div><div class = "yesnoc bt"><input type="radio" name="sc" value="To a large extent"> To a large extent</div><div class = "yesnoc bt"><input type="radio" name="sc" value="To a limited extent"> To a limited extent</div><div class = "yesnoc bt"><input type="radio" name="sc" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
@@ -237,6 +240,7 @@
           <td class = "item">Whether Folder and writing material were provided? <div>(If yes, rate it)</div> </td>
           <td width = "417px">
              <div class = "bt"><input type="radio" name="sd" class = "yesd" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sd" class = "nod" value="No"> No</div>
+             <br><br>
              <div class = "yesnod bt"><input type="radio" name="sd" value="Fully" > Fully</div><div class = "yesnod bt"><input type="radio" name="sd" value="To a large extent"> To a large extent</div><div class = "yesnod bt"><input type="radio" name="sd" value="To a limited extent"> To a limited extent</div><div class = "yesnod bt"><input type="radio" name="sd" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
@@ -244,6 +248,7 @@
           <td class = "item">Whether Administrative arrangement of NPC were provided? <div>(If yes, rate it)</div> </td>
           <td width = "417px">
              <div class = "bt"><input type="radio" name="se" class = "yese" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="se" class = "noe" value="No"> No</div>
+             <br><br>
              <div class = "yesnoe bt"><input type="radio" name="se" value="Fully" > Fully</div><div class = "yesnoe bt"><input type="radio" name="se" value="To a large extent"> To a large extent</div><div class = "yesnoe bt"><input type="radio" name="se" value="To a limited extent"> To a limited extent</div><div class = "yesnoe bt"><input type="radio" name="se" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
@@ -251,6 +256,7 @@
           <td class = "item">Whether Audio-Visual aids were used? <div>(If yes, evaluate its use)</div> </td>
           <td width = "417px">
             <div class = "bt"><input type="radio" name="s6" class = "yes" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="s6" class = "no" value="No"> No</div>
+            <br><br>
             <div class = " yesno bt"><input type="radio" name="s6" value="Excellent"> Excellent</div><div class = "yesno bt"><input type="radio" name="s6" value="Very Good"> Very Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Good"> Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Adequate"> Adequate</div><div class = "yesno bt"><input type="radio" name="s6" value="Poor"> Poor</div></td>
         </tr>
         <tr>
