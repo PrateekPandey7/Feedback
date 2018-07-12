@@ -213,7 +213,7 @@
         </tr>
         <tr>
           <td width = "50px">A</td>
-          <td class = "item">Whether Accommodation were provided? <div>(If yes, rate it)</div> </td>
+          <td class = "item">Whether Accommodation was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px">
              <div class = "bt"><input type="radio" name="sa" class = "yesa" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sa" class = "noa" value="No"> No</div>
              <br><br>
@@ -221,7 +221,7 @@
         </tr>
         <tr>
           <td width = "50px">B</td>
-          <td class = "item">Whether Food were provided? <div>(If yes, rate it)</div> </td>
+          <td class = "item">Whether Food was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px"> 
             <div class = "bt"><input type="radio" name="sb" class = "yesb" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sb" class = "nob" value="No"> No</div>
             <br><br>
@@ -229,7 +229,7 @@
         </tr>
         <tr>
           <td width = "50px">C</td>
-          <td class = "item">Whether Room service and other hotel facilities were provided? <div>(If yes, rate it)</div> </td>
+          <td class = "item">Whether Room service and other hotel facilities was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px">
              <div class = "bt"><input type="radio" name="sc" class = "yesc" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sc" class = "noc" value="No"> No</div>
              <br><br>
@@ -237,7 +237,7 @@
         </tr>
         <tr>
           <td width = "50px">D</td>
-          <td class = "item">Whether Folder and writing material were provided? <div>(If yes, rate it)</div> </td>
+          <td class = "item">Whether Folder and writing material was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px">
              <div class = "bt"><input type="radio" name="sd" class = "yesd" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sd" class = "nod" value="No"> No</div>
              <br><br>
@@ -245,7 +245,7 @@
         </tr>
         <tr>
           <td width = "50px">E</td>
-          <td class = "item">Whether Administrative arrangement of NPC were provided? <div>(If yes, rate it)</div> </td>
+          <td class = "item">Whether Administrative arrangement of NPC was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px">
              <div class = "bt"><input type="radio" name="se" class = "yese" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="se" class = "noe" value="No"> No</div>
              <br><br>
