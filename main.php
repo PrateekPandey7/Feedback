@@ -1,5 +1,8 @@
 <?php
 $progname = $_GET["name"];
+$arr = explode("-", $progname,3);
+$nameofprogramme = $arr[0];
+$nameofcoordinator = $arr[1];
 function clean_text($string)
 {
   $string = trim($string);
@@ -191,17 +194,10 @@ if(!empty($_POST["extra"]))
 {
     $extra = clean_text($_POST["extra"]);
 }
-
 $pn = substr($progname,0,strlen($progname));
-/*for($x = 0; $x < strlen($progname)-1; $x++)
-{
-    if($progname[$x] != ' ' || $progname[$x] != "\n")
-        $pn = $pn.$progname[$x];
-}   */
 $stringfile = 'FeedbackForms/'.$name.'('.$progname.')'.'.pdf';
 include 'Excel/excel.php';
 include 'formtopdf.php';
 //include 'generateReport.php';
 header('Location: confirmation.php?name='.urlencode($stringfile));
-
 ?>

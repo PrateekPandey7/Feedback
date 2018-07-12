@@ -22,7 +22,7 @@ $pdf->AddPage();
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Programme Name :');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$programme);
+$pdf->Cell(100,50,$nameofprogramme);
 $pdf->Ln(10);
 
 //Duration
@@ -36,7 +36,7 @@ $pdf->Ln(10);
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Programme Coordinator :');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$coordinator);
+$pdf->Cell(100,50,$nameofcoordinator);
 $pdf->Ln(10);
 
 //Name
@@ -193,6 +193,6 @@ $pdf->Ln(2);
 
 
 
-$target = 'FeedbackForms/'.$name.'('.$pn.')'.'.pdf';
+$target = 'FeedbackForms/'.$name.'('.$nameofprogramme.'-'.$nameofcoordinator.')'.'.pdf';
 $pdf->Output($target,'F'); 
 ?>
