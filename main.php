@@ -1,6 +1,6 @@
 <?php
 $progname = $_GET["name"];
-$arr = explode("-", $progname,3);
+$arr = explode("__", $progname,3);
 $nameofprogramme = $arr[0];
 $nameofcoordinator = $arr[1];
 function clean_text($string)
@@ -11,13 +11,9 @@ function clean_text($string)
   return $string;
 }
 
-$programme = '';$duration = '';$coordinator = '';$name = '';$designation = '';$level = '';$type = '';$organization = '';$mobile = '';$nationality = '';$s1 = '';$s2 = '';$s3 = '';$s4 = '';$topicuseful1 = '';$topicusefulby1 = '';$topicnotuseful1 = '';$topicnotusefulby1 = '';$topicuseful2 = '';$topicusefulby2 = '';$topicnotuseful2 = '';$topicnotusefulby2 = '';$topicuseful3 = '';$topicusefulby3 = '';$topicnotuseful3 = '';$topicnotusefulby3 = '';$topicuseful4 = '';$topicusefulby4 = '';$topicnotuseful4 = '';$topicnotusefulby4 = '';$newtopic = '';$faculty1 = '';$facultyrating1 = '';$faculty2 = '';$facultyrating2 = '';$faculty3 = '';$facultyrating3 = '';$faculty4 = '';$facultyrating4 = '';$sa = '';$sb = '';
+$programme = '';$email = '';$coordinator = '';$name = '';$designation = '';$level = '';$type = '';$organization = '';$mobile = '';$nationality = '';$s1 = '';$s2 = '';$s3 = '';$s4 = '';$topicuseful1 = '';$topicusefulby1 = '';$topicnotuseful1 = '';$topicnotusefulby1 = '';$topicuseful2 = '';$topicusefulby2 = '';$topicnotuseful2 = '';$topicnotusefulby2 = '';$topicuseful3 = '';$topicusefulby3 = '';$topicnotuseful3 = '';$topicnotusefulby3 = '';$topicuseful4 = '';$topicusefulby4 = '';$topicnotuseful4 = '';$topicnotusefulby4 = '';$newtopic = '';$faculty1 = '';$facultyrating1 = '';$faculty2 = '';$facultyrating2 = '';$faculty3 = '';$facultyrating3 = '';$faculty4 = '';$facultyrating4 = '';$sa = '';$sb = '';
 $sc = '';$sd = '';$se = '';$s6 = '';$s7 = '';$remark = '';$extra = '';
 
-if(!empty($_POST["duration"]))
-{
-    $duration = clean_text($_POST["duration"]);
-}
 if(!empty($_POST["name"]))
 {
     $name = clean_text($_POST["name"]);
@@ -41,6 +37,10 @@ if(!empty($_POST["type"]))
 if(!empty($_POST["mobile"]))
 {
     $mobile = clean_text($_POST["mobile"]);
+}
+if(!empty($_POST["email"]))
+{
+    $email = clean_text($_POST["email"]);
 }
 if(!empty($_POST["s1"]))
 {

@@ -5,11 +5,11 @@ class PDF extends FPDF
 
 	function Header()
 	{
-	    $this->Image('npc.jpg',10,6,30);
 	    $this->SetFont('Arial','B',15);
 	    $this->Cell(65);
-	    $this->Cell(80,10,'Feedback Form',1,0,'C');
-	    $this->Ln(20);
+	    $this->Cell(70,10,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
+	    $this->Ln(3);
+	    $this->Cell(200,10,'Training Evaluation and Feedback Form',0,2,'C');
 	}
 
 }
@@ -25,13 +25,6 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$nameofprogramme);
 $pdf->Ln(10);
 
-//Duration
-$pdf->SetFont('Arial','B',14);
-$pdf->Cell(80,50,'Duration :');
-$pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$duration);
-$pdf->Ln(10);
-
 //ProgrammeCoordinator
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Programme Coordinator :');
@@ -39,6 +32,9 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$nameofcoordinator);
 $pdf->Ln(10);
 
+/*$pdf->SetFont('Arial','B',18);
+$pdf->Cell(80,50,'PERSONAL INFORMATION');
+$pdf->Ln(3);*/
 //Name
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Name of Participant:');
@@ -67,6 +63,17 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$mobile);
 $pdf->Ln(10);
 
+//Email
+$pdf->SetFont('Arial','B',14);
+$pdf->Cell(80,50,'Email :');
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(100,50,$email);
+$pdf->Ln(10);
+
+/*$pdf->SetFont('Arial','B',18);
+$pdf->Cell(80,50,'FEEDBACK');
+$pdf->Ln(3);*/
+$pdf->Ln(30);
 //S1
 $pdf->SetFont('Arial','',14);
 $pdf->Ln(20);
@@ -87,6 +94,27 @@ $pdf->Ln(20);
 $pdf->MultiCell(200,7,'3) How was the quality and utility of course material and lecture notes circulated?',0,'L',false);
 $pdf->SetFont('Arial','',12);
 $pdf->Cell(100,20,'Ans : ' . $s3);
+$pdf->Ln(2);
+//S4
+$pdf->SetFont('Arial','',14);
+$pdf->Ln(20);
+$pdf->MultiCell(200,7,'4) What was the level of learning outcome of this program?',0,'L',false);
+$pdf->SetFont('Arial','',12);
+$pdf->Cell(100,20,'Ans : ' . $s3);
+$pdf->Ln(2);
+$pdf->AddPage();
+$pdf->SetFont('Arial','',14);
+$pdf->Ln(20);
+$pdf->MultiCell(200,7,'5) Type of your organization?',0,'L',false);
+$pdf->SetFont('Arial','',12);
+$pdf->Cell(100,20,'Ans : ' . $type);
+$pdf->Ln(2);
+
+$pdf->SetFont('Arial','',14);
+$pdf->Ln(20);
+$pdf->MultiCell(200,7,'6) Your operational level?',0,'L',false);
+$pdf->SetFont('Arial','',12);
+$pdf->Cell(100,20,'Ans : ' . $level);
 $pdf->Ln(2);
 
 
@@ -129,7 +157,7 @@ $pdf->Cell(100,50,$facultyrating4);
 $pdf->Ln(10);
 
 
-$pdf->Ln(20);
+$pdf->AddPage();
 $pdf->SetFont('Arial','',14);
 $pdf->Cell(100,50,'Accommodation :');
 $pdf->SetFont('Arial','',10);
@@ -172,8 +200,8 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$s7);
 $pdf->Ln(10);
 
-$pdf->AddPage();
-$pdf->Ln(10);
+
+$pdf->Ln(40);
 $pdf->SetFont('Arial','B',14);
 $pdf->MultiCell(200,7,'Extra Remark',0,'L',false);
 $pdf->SetFont('Arial','',12);
@@ -193,6 +221,6 @@ $pdf->Ln(2);
 
 
 
-$target = 'FeedbackForms/'.$name.'('.$nameofprogramme.'-'.$nameofcoordinator.')'.'.pdf';
+$target = 'FeedbackForms/'.$name.'('.$nameofprogramme.'__'.$nameofcoordinator.')'.'.pdf';
 $pdf->Output($target,'F'); 
 ?>

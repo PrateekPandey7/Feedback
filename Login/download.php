@@ -1,11 +1,11 @@
 <?php 
 	$token = $_GET["name"];
-	$arr = explode("-", $token,3);
+	$arr = explode("__", $token,3);
 	$code = $arr[0];
 	$coord = $arr[1];
 	$progname = $arr[2];
-	$token = $code.'-'.$coord.'-'.$progname;
-	$string = $progname.'-'.$coord;
+	$token = $code.'__'.$coord.'__'.$progname;
+	$string = $progname.'__'.$coord;
 	$file = $string;
 ?>
 <html lang="en">

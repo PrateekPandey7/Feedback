@@ -31,7 +31,7 @@ include "writeinfile.php"; ?>
 				<i class = "fa fa-lock"></i>
 			</div>
 			<div class = "input">
-				<input type = "text" name = "topic" id = "topic" placeholder ="Programme Name" required />
+				<input type = "text" name = "topic" id = "topic" placeholder ="Programme Name and Duration" required />
 			</div>
 			<div>
 				<input type = "submit" name = "signup" id = "signup" value = "Sign Up" />

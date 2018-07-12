@@ -11,7 +11,7 @@
 		$string = substr($u,0,3).substr($p,0,3).substr($topic,0,3);
 		$r = hash('sha512', $string, false);
 		$myfile = fopen("database.txt","a") or die("Please try again Later");
-		$search = substr($r,0,10).'-'.$u.'-'.$topic;
+		$search = PHP_EOL.substr($r,0,10).'__'.$u.'__'.$topic;
 		$lines = file('database.txt');
 		$flag = 0;
 		foreach($lines as $line)

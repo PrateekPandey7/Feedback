@@ -41,9 +41,9 @@ include 'login.php';
 				<input type = "submit" name = "login" id = "login" value = "Log in" />
 			</div>
 			<br>
-			<div>
+			<!--<div>
 				<input type = "button" name = "logincord" class = "logincord" id = "logincord" value = "Log in as Coordinator" />
-			</div>
+			</div>-->
 		</form>
 	</section>
 
