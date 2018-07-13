@@ -8,9 +8,9 @@ $pdf = new PDF();
 $pdf->AddPage();
 
 $pdf->SetFont('Arial','B',15);
-$pdf->Cell(200,10,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
+$pdf->Cell(200,5,'NATIONAL PRODUCTIVITY COUNCIL',0,2,'C');
 $pdf->Ln(3);
-$pdf->Cell(200,10,'Training Evaluation and Feedback Form',0,2,'C');
+$pdf->Cell(200,5,'Training Evaluation and Feedback Form',0,2,'C');
 //ProgrammeName
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Programme Name :');
@@ -70,82 +70,87 @@ $pdf->Ln(3);
 //S1
 $pdf->SetFont('Arial','B',14);
 $pdf->Ln(20);
-$pdf->MultiCell(200,7,'1) To what extent is this programme useful to you in your job or personal growth?',0,'L',false);
+$pdf->MultiCell(200,5,'1) To what extent is this programme useful to you in your job or personal growth?',0,'L',false);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,20,'Ans : ' . $s1);
+$pdf->Cell(100,5,'Ans : ' . $s1);
 $pdf->Ln(2);
 //S2
 $pdf->SetFont('Arial','B',14);
 $pdf->Ln(20);
-$pdf->MultiCell(200,7,'2) How far have you been benefitted from interaction with the fellow participants?',0,'L',false);
+$pdf->MultiCell(200,5,'2) How far have you been benefitted from interaction with the fellow participants?',0,'L',false);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,20,'Ans : ' . $s2);
+$pdf->Cell(100,5,'Ans : ' . $s2);
 $pdf->Ln(2);
 //S3
 $pdf->SetFont('Arial','B',14);
 $pdf->Ln(20);
-$pdf->MultiCell(200,7,'3) How was the quality and utility of course material and lecture notes circulated?',0,'L',false);
+$pdf->MultiCell(200,5,'3) How was the quality and utility of course material and lecture notes circulated?',0,'L',false);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,20,'Ans : ' . $s3);
+$pdf->Cell(100,5,'Ans : ' . $s3);
 $pdf->Ln(2);
 //S4
 $pdf->SetFont('Arial','B',14);
 $pdf->Ln(20);
-$pdf->MultiCell(200,7,'4) What was the level of learning outcome of this program?',0,'L',false);
+$pdf->MultiCell(200,5,'4) What was the level of learning outcome of this program?',0,'L',false);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,20,'Ans : ' . $s3);
+$pdf->Cell(100,5,'Ans : ' . $s3);
 $pdf->Ln(2);
 $pdf->SetFont('Arial','B',14);
 $pdf->Ln(20);
-$pdf->MultiCell(200,7,'5) Type of your organization?',0,'L',false);
+$pdf->MultiCell(200,5,'5) Type of your organization?',0,'L',false);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,20,'Ans : ' . $type);
+$pdf->Cell(100,5,'Ans : ' . $type);
 $pdf->Ln(2);
 
 $pdf->SetFont('Arial','B',14);
 $pdf->Ln(20);
-$pdf->MultiCell(200,7,'6) Your operational level?',0,'L',false);
+$pdf->MultiCell(200,5,'6) Your operational level?',0,'L',false);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,20,'Ans : ' . $level);
-$pdf->Ln(2);
-
-
-$pdf->SetFont('Arial','B',14);
-$pdf->Cell(80,50,'Topic found useful :');
-$pdf->SetFont('Arial','',10);
+$pdf->Cell(100,5,'Ans : ' . $level);
 $pdf->Ln(30);
+
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(80,10,'7(i) Evaluate the topics of the programme');
+$pdf->Ln(20);
+$pdf->SetFont('Arial','B',14);
+$pdf->Cell(80,10,'Topic found useful :');
+$pdf->SetFont('Arial','',12);
+$pdf->Ln(10);
 $pdf->MultiCell(200,7,$topicuseful,0,'L',false);
 $pdf->Ln(10);
 $pdf->SetFont('Arial','B',14);
-$pdf->Cell(80,50,'Topic Not found useful :');
-$pdf->SetFont('Arial','',10);
-$pdf->Ln(30);
-$pdf->MultiCell(200,7,$topicnotuseful,0,'L',false);
+$pdf->Cell(80,10,'Topic Not found useful :');
+$pdf->SetFont('Arial','',12);
 $pdf->Ln(10);
+$pdf->MultiCell(200,7,$topicnotuseful,0,'L',false);
+$pdf->Ln(20);
 
-
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(80,10,'7(ii) Evaluate the faculty of the programme');
+$pdf->Ln(30);
 $pdf->SetFont('Arial','B',14);
-$pdf->Cell(80,50,'7(ii) Faculty Rating :');
+$pdf->Cell(80,10,'Faculty Rating :');
 $pdf->Ln(8);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$faculty1 . ' :');
+$pdf->Cell(100,20,$faculty1 . ' :');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$facultyrating1);
+$pdf->Cell(100,20,$facultyrating1);
 $pdf->Ln(10);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$faculty2 . ' :');
+$pdf->Cell(100,20,$faculty2 . ' :');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$facultyrating2);
+$pdf->Cell(100,20,$facultyrating2);
 $pdf->Ln(10);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$faculty3 . ' :');
+$pdf->Cell(100,20,$faculty3 . ' :');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$facultyrating3);
+$pdf->Cell(100,20,$facultyrating3);
 $pdf->Ln(10);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$faculty4 . ' :');
+$pdf->Cell(100,20,$faculty4 . ' :');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$facultyrating4);
+$pdf->Cell(100,20,$facultyrating4);
 $pdf->Ln(10);
 
 $pdf->AddPage();
@@ -179,7 +184,7 @@ $pdf->SetFont('Arial','B',12);
 $pdf->Cell(100,20,'E) Administrative arrangement of NPC :');
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,20,$se);
-$pdf->Ln(30);
+$pdf->Ln(20);
 
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(100,20,'9) Whether Audio-visual aids were used? :');
@@ -193,15 +198,15 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,20,$s7);
 
 
-$pdf->Ln(20);
+$pdf->Ln(30);
 $pdf->SetFont('Arial','B',14);
 $pdf->MultiCell(200,7,'11) Extra Remark',0,'L',false);
 $pdf->SetFont('Arial','',10);
 $pdf->MultiCell(200,7,'Ans : ' . $extra,0,'L',false);
-$pdf->Ln(2);
+$pdf->Ln(15);
 
 $pdf->SetFont('Arial','B',14);
-$pdf->Ln(20);
+$pdf->Ln(15);
 $pdf->MultiCell(200,7,'12) Any new learning and take away from the program',0,'L',false);
 $pdf->SetFont('Arial','',10);
 $pdf->MultiCell(200,7,'Ans : ' . $remark,0,'L',false);
