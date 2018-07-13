@@ -9,7 +9,8 @@
 		$topic = $_POST["topic"];
 		$t = substr($topic,0,3);
 		$string = substr($u,0,3).substr($p,0,3).substr($topic,0,3);
-		$r = hash('sha512', $string, false);
+		$str = $string.time();
+		$r = hash('sha512', $str, false);
 		$myfile = fopen("database.txt","a") or die("Please try again Later");
 		$search = PHP_EOL.substr($r,0,10).'__'.$u.'__'.$topic;
 		$lines = file('database.txt');
