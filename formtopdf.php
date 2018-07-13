@@ -76,34 +76,34 @@ $pdf->Cell(100,5,'Ans : ' . $s1);
 $pdf->Ln(2);
 //S2
 $pdf->SetFont('Arial','B',14);
-$pdf->Ln(20);
+$pdf->Ln(10);
 $pdf->MultiCell(200,5,'2) How far have you been benefitted from interaction with the fellow participants?',0,'L',false);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,5,'Ans : ' . $s2);
 $pdf->Ln(2);
 //S3
 $pdf->SetFont('Arial','B',14);
-$pdf->Ln(20);
+$pdf->Ln(10);
 $pdf->MultiCell(200,5,'3) How was the quality and utility of course material and lecture notes circulated?',0,'L',false);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,5,'Ans : ' . $s3);
 $pdf->Ln(2);
 //S4
 $pdf->SetFont('Arial','B',14);
-$pdf->Ln(20);
+$pdf->Ln(10);
 $pdf->MultiCell(200,5,'4) What was the level of learning outcome of this program?',0,'L',false);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,5,'Ans : ' . $s3);
 $pdf->Ln(2);
 $pdf->SetFont('Arial','B',14);
-$pdf->Ln(20);
+$pdf->Ln(10);
 $pdf->MultiCell(200,5,'5) Type of your organization?',0,'L',false);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,5,'Ans : ' . $type);
 $pdf->Ln(2);
 
 $pdf->SetFont('Arial','B',14);
-$pdf->Ln(20);
+$pdf->Ln(10);
 $pdf->MultiCell(200,5,'6) Your operational level?',0,'L',false);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,5,'Ans : ' . $level);
@@ -151,9 +151,8 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,20,$faculty4 . ' :');
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,20,$facultyrating4);
-$pdf->Ln(10);
+$pdf->Ln(20);
 
-$pdf->AddPage();
 $pdf->SetFont('Arial','B',14);
 $pdf->MultiCell(200,7,"8) To what extent are you satisfied with the quality of the following (only if applicable)",0,'L',false);
 $pdf->SetFont('Arial','B',12);
@@ -186,6 +185,7 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,20,$se);
 $pdf->Ln(20);
 
+$pdf->AddPage();
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(100,20,'9) Whether Audio-visual aids were used? :');
 $pdf->SetFont('Arial','',10);

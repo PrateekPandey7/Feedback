@@ -4,7 +4,7 @@
 	
 	if(isset($_POST["login"]))
 	{
-		if(!empty($_POST["user"]))
+		/*if(!empty($_POST["user"]))
 		{
 			$p = $_POST["password"];
 			$string = $p;
@@ -29,10 +29,10 @@
 			{
 				header('Location: download.php?name='.urlencode($find));
 			}
-		}	
-		else
+		}	*/
+		/*else
 			{
-				$p =  $_POST["password"];
+			*/	$p =  $_POST["password"];
 				$myfile = fopen("database.txt","a") or die("Please try again Later");
 				$search = $p;
 				$lines = file('database.txt');
@@ -60,6 +60,6 @@
 		            exit;
 				}
 				fclose($myfile);
-			}
+			//}
 	}
 ?>

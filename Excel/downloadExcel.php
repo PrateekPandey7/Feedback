@@ -1,8 +1,6 @@
 <?php
     $prog = $_GET["name"];
-    echo $prog;
     $zipname = "Excel-".$prog.'.zip';
-    echo $zipname;
     $zip = new ZipArchive;
     $zip->open($zipname, ZipArchive::CREATE);
     if ($handle = opendir('.')) 
