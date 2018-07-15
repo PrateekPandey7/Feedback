@@ -35,7 +35,7 @@
 				<!--<p>Please, keep your provided contact number and Email Id active for further information. We will get back to you very soon.</p>-->
 				<div class="wrapper">
   					<span class="square individual">
-  					You can download your PDF form from the link  
+  					You can download your submitted Feedback Form from the link 
     				<a class = "link" href="<?php echo $_GET['name'];?>" target = '_blank'>Click Here</a> for your reference purpose.
   					</span>
 				</div>
