@@ -4,6 +4,7 @@
 	{
 		$file_open = fopen($filename,"a");
 		$form_data = array(
+		'sno' => 'S.No.',
 		'name' => 'Name',
 		'designation' => 'Designation',
 		'organization' => 'Organization',
@@ -32,10 +33,12 @@
 	}
 	$file_open = fopen($filename,"a");
 	$no_rows = count(file($filename));
+	$no_rows = $no_rows - (int)($no_rows/2);
 	$allfaculty = '('.$faculty1.'-'.$facultyrating1.')'.'('.$faculty2.'-'.$facultyrating2.')'.'('.$faculty3.'-'.$facultyrating3.')'.'('.$faculty4.'-'.$facultyrating4.')';
 	$topicuseful = '('.$topicuseful1.'- By -'.$topicusefulby1.')' .'('.$topicuseful2.'- By -'.$topicusefulby2.')' .'('.$topicuseful3.'- By -'.$topicusefulby3.')' .'('.$topicuseful4. '- By -'.$topicusefulby4.')';
 	$topicnotuseful = '('.$topicnotuseful1.'- By -'.$topicnotusefulby1.')' .'('.$topicnotuseful2.'- By -'.$topicnotusefulby2.')' .'('.$topicnotuseful3.'- By -'.$topicnotusefulby3.')' .'('.$topicnotuseful4. '- By -'.$topicnotusefulby4.')'; 
 	$form_data = array(
+		'sno' => $no_rows,
 		'name' => $name,
 		'designation' => $designation,
 		'organization' => $organization,

@@ -4,6 +4,32 @@
 	color: #003466;
 }
 
+.progrinfo
+{
+	margin-left: 10px;
+}
+
+.notes, .inst
+{
+	margin-left: 10px;
+}
+
+.inst
+{
+	margin-right: 30px;
+}
+
+.notes p
+{
+	font-size: 13px;
+	margin-bottom: -2px;
+}
+
+.notesdesc
+{
+	font-size: 14px;
+}
+
 .heading1
 {
 	margin-top: -5px;

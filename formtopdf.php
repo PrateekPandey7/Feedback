@@ -24,12 +24,13 @@ $pdf->Cell(200,5,'Training Evaluation and Feedback Form',0,2,'C');
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Programme Name :');
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(100,50,$nameofprogramme);
+$pdf->Ln(5);
+$pdf->Cell(200,50,$nameofprogramme);
 $pdf->Ln(10);
-
 //ProgrammeCoordinator
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(80,50,'Programme Coordinator :');
+$pdf->Ln(5);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,50,$nameofcoordinator);
 $pdf->Ln(10);

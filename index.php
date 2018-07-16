@@ -35,8 +35,10 @@
 
   <form method = "post" action = '<?php echo $point ?>'>
   
-    <p>All fields marked with <span style="color:red">  *</span> are compulsory</p>
-    <span class = "sp" >Note: We attach a great significance to your evaluation. This would help us to rigorously evaluate the course. Please, therefore, be as candid as you can. Rest assured that your evaluation will be kept strictly confidential. You need not disclose your identity if you wish although it may be more helpful if you do.</span>
+    <div class = "inst">
+      <p>All fields marked with <span style="color:red">  *</span> are compulsory</p>
+      <span class = "sp" >Note: We attach a great significance to your evaluation. This would help us to rigorously evaluate the course. Please, therefore, be as candid as you can. Rest assured that your evaluation will be kept strictly confidential. You need not disclose your identity if you wish although it may be more helpful if you do.</span>
+    </div>
     
 
     <div>
@@ -45,11 +47,11 @@
       <hr>
       <div class = "prog">
         <label>Programme Name: <span style="color:red">  *</span></label>
-        <?php echo $progname ?>
+        <p class = "progrinfo"><?php echo $progname ?></p>
       </div>  
       <div class = "prog"> 
         <label>Programme Coordinator:</label>
-          <?php echo $coord ?>
+         <p class = "progrinfo"><?php echo $coord ?></p>
     </div>
         <hr>
     </div>
@@ -98,8 +100,8 @@
           </tr>
           <tr>
             <td>4</td>
-            <td class = "item">What was the level of learning outcome of this program?<span style="color:red">  *</span></td>
-            <td><div class = "bt" data-toggle="tooltip" title="I can generate new ideas or products" ><input type="radio" name="s4" value="Creating"> Creating</div><div class = "bt" data-toggle="tooltip" title="I can justify a decision or a course of action" ><input type="radio" name="s4" value="Evaluating"> Evaluating</div><div class = "bt" data-toggle="tooltip" title="I can break the information into parts to explore patterns and relationships or analyze charts/data to support conclusions"><input type="radio" name="s4" value="Analyzing"> Analyzing</div><div class = "bt"  data-toggle="tooltip" title="I can use information, rules and procedures in concrete situations" ><input type="radio" name="s4" value="Applying"> Applying</div><div class = "bt"  data-toggle="tooltip" title="I can identify/interpret the given terms, concepts and principles" ><input type="radio" name="s4" value="Understanding"> Understanding</div><div class = "bt"  data-toggle="tooltip" title="I am able to recall the information"><input type="radio" name="s4" value="Remembering" required> Remembering</div></td>
+            <td class = "item">What was the level of learning outcome of this program?<span style="color:red">  *</span><p class = "notesdesc">(For description hover over the option or refer NOTES at the bottom of the form)</td>
+            <td><div class = "bt" data-toggle="tooltip" title="I can generate new ideas or products" ><input type="radio" name="s4" value="Create"> Create</div><div class = "bt" data-toggle="tooltip" title="I can justify a decision or a course of action" ><input type="radio" name="s4" value="Evaluate"> Evaluate</div><div class = "bt" data-toggle="tooltip" title="I can break the information into parts to explore patterns and relationships or analyze charts/data to support conclusions"><input type="radio" name="s4" value="Analyze"> Analyze</div><div class = "bt"  data-toggle="tooltip" title="I can use information, rules and procedures in concrete situations" ><input type="radio" name="s4" value="Apply"> Apply</div><div class = "bt"  data-toggle="tooltip" title="I can identify/interpret the given terms, concepts and principles" ><input type="radio" name="s4" value="Understand"> Understand</div><div class = "bt"  data-toggle="tooltip" title="I am able to recall/reproduce the knowledge"><input type="radio" name="s4" value="Remember" required> Remember</div></td>
           </tr>
           <tr>
             <td>5</td>
@@ -285,6 +287,17 @@
       </table>
 
     </div>
+    <hr>
+    <div class = "notes">
+      <strong><p>NOTES</p></strong>
+      <p>Create &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;I can generate new ideas or products</p>
+      <p>Evaluate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;I can justify a decision or a course of action</p>
+      <p>Analyze &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;I can break the information into parts to explore patterns and relationships or analyze charts/data to support conclusions</p>
+      <p>Apply &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;I can use information, rules and procedures in concrete situations</p>
+      <p>Understand &nbsp;&nbsp;: &nbsp;&nbsp;I can identify/interpret the given terms, concepts and principles</p>
+      <p>Remember &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;I am able to recall/reproduce the knowledge</p>
+    </div>
+    <hr>
 
     <center><input type = "submit" name = "submit"></center>
 
