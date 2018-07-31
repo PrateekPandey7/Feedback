@@ -26,8 +26,16 @@
 		if($flag == 0)
 		{
 			fwrite($myfile, $search);
-
-			header('Location: download.php?name='.urlencode($search));
+			$find = $search;
+			$data = '';
+			for($i = 0; $i < strlen($find); $i++)
+			{
+				if($find[$i] == '"' || $find[$i] == "'")
+					continue;
+				else
+					$data = $data.$find[$i];
+			}
+			header('Location: download.php?name='.urlencode($data));
 		}
 		fclose($myfile);
 	}

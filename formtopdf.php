@@ -195,7 +195,6 @@ $pdf->SetFont('Arial','',10);
 $pdf->Cell(100,20,$se);
 $pdf->Ln(20);
 
-$pdf->AddPage();
 $pdf->SetFont('Arial','B',14);
 $pdf->Cell(100,20,'9) Whether Audio-visual aids were used? :');
 $pdf->SetFont('Arial','',10);

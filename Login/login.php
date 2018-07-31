@@ -46,6 +46,14 @@
 		    			$find = $line;
 		    		}
 				}
+				$data = '';
+				for($i = 0; $i < strlen($find); $i++)
+				{
+					if($find[$i] == '"' || $find[$i] == "'")
+						continue;
+					else
+						$data = $data.$find[$i];
+				}
 				if($flag == 0)
 				{
 					$message = "Wrong Credentials!!";
@@ -55,7 +63,7 @@
 				{
 					session_start();
 					$_SESSION['is_auth'] = true;
-					$loc = '../index.php?name='.urlencode($find);
+					$loc = '../index.php?name='.urlencode($data);
 					header('location:'.$loc);
 		            exit;
 				}
