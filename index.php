@@ -217,49 +217,49 @@
           <td width = "50px">A</td>
           <td class = "item">Whether Accommodation was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px">
-             <div class = "bt"><input type="radio" name="sa" class = "yesa" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sa" class = "noa" value="No"> No</div>
+             <div class = "bt"><input type="radio" id = "yesa" value="Yes" > Yes</div><div id = "n1" class = "bt"><input type="radio" name="sa" id = "noa" value="No"> No</div>
              <br><br>
-             <div class = "yesnoa bt"><input type="radio" name="sa" value="Fully" > Fully</div><div class = "yesnoa bt"><input type="radio" name="sa" value="To a large extent"> To a large extent</div><div class = "yesnoa bt"><input type="radio" name="sa" value="To a limited extent"> To a limited extent</div><div class = "yesnoa bt"><input type="radio" name="sa" value="Not at all"> Not at all</div></td>
+             <div class = "yesnoa bt"><input type="radio" id = "ya" name="sa" value="Fully"> Fully</div><div class = "yesnoa bt"><input type="radio" name="sa" value="To a large extent"> To a large extent</div><div class = "yesnoa bt"><input type="radio" name="sa" value="To a limited extent"> To a limited extent</div><div class = "yesnoa bt"><input type="radio" name="sa" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
           <td width = "50px">B</td>
           <td class = "item">Whether Food was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px"> 
-            <div class = "bt"><input type="radio" name="sb" class = "yesb" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sb" class = "nob" value="No"> No</div>
+            <div class = "bt"><input type="radio" id = "yesb" class = "yesb" value="Yes" > Yes</div><div id = "n2" class = "bt"><input type="radio" name="sb" id = "nob" value="No"> No</div>
             <br><br>
-             <div class = "yesnob bt"><input type="radio" name="sb" value="Fully" > Fully</div><div class = "yesnob bt"><input type="radio" name="sb" value="To a large extent"> To a large extent</div><div class = "yesnob bt"><input type="radio" name="sb" value="To a limited extent"> To a limited extent</div><div class = "yesnob bt"><input type="radio" name="sb" value="Not at all"> Not at all</div></td>
+             <div class = "yesnob bt"><input type="radio" id = "yb" name="sb" value="Fully" > Fully</div><div class = "yesnob bt"><input type="radio" name="sb" value="To a large extent"> To a large extent</div><div class = "yesnob bt"><input type="radio" name="sb" value="To a limited extent"> To a limited extent</div><div class = "yesnob bt"><input type="radio" name="sb" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
           <td width = "50px">C</td>
           <td class = "item">Whether Room service and other hotel facilities was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px">
-             <div class = "bt"><input type="radio" name="sc" class = "yesc" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sc" class = "noc" value="No"> No</div>
+             <div class = "bt"><input type="radio" id = "yesc" class = "yesc" value="Yes" > Yes</div><div id = "n3" class = "bt"><input type="radio" name="sc" id= "noc" value="No"> No</div>
              <br><br>
-             <div class = "yesnoc bt"><input type="radio" name="sc" value="Fully" > Fully</div><div class = "yesnoc bt"><input type="radio" name="sc" value="To a large extent"> To a large extent</div><div class = "yesnoc bt"><input type="radio" name="sc" value="To a limited extent"> To a limited extent</div><div class = "yesnoc bt"><input type="radio" name="sc" value="Not at all"> Not at all</div></td>
+             <div class = "yesnoc bt"><input type="radio" id = "yc" name="sc" value="Fully" > Fully</div><div class = "yesnoc bt"><input type="radio" name="sc" value="To a large extent"> To a large extent</div><div class = "yesnoc bt"><input type="radio" name="sc" value="To a limited extent"> To a limited extent</div><div class = "yesnoc bt"><input type="radio" name="sc" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
           <td width = "50px">D</td>
           <td class = "item">Whether Folder and writing material was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px">
-             <div class = "bt"><input type="radio" name="sd" class = "yesd" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="sd" class = "nod" value="No"> No</div>
+             <div class = "bt"><input type="radio" id = "yesd" class = "yesd" value="Yes" > Yes</div><div id = "n4" class = "bt"><input type="radio" name="sd" id = "nod" value="No"> No</div>
              <br><br>
-             <div class = "yesnod bt"><input type="radio" name="sd" value="Fully" > Fully</div><div class = "yesnod bt"><input type="radio" name="sd" value="To a large extent"> To a large extent</div><div class = "yesnod bt"><input type="radio" name="sd" value="To a limited extent"> To a limited extent</div><div class = "yesnod bt"><input type="radio" name="sd" value="Not at all"> Not at all</div></td>
+             <div class = "yesnod bt"><input type="radio" id = "yd" name="sd" value="Fully" > Fully</div><div class = "yesnod bt"><input type="radio" name="sd" value="To a large extent"> To a large extent</div><div class = "yesnod bt"><input type="radio" name="sd" value="To a limited extent"> To a limited extent</div><div class = "yesnod bt"><input type="radio" name="sd" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
           <td width = "50px">E</td>
           <td class = "item">Whether Administrative arrangement of NPC was provided? <div>(If yes, evaluate them)</div> </td>
           <td width = "417px">
-             <div class = "bt"><input type="radio" name="se" class = "yese" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="se" class = "noe" value="No"> No</div>
+             <div class = "bt"><input type="radio" id = "yese" class = "yese" value="Yes" > Yes</div><div id = "n5" class = "bt"><input type="radio" name="se" id = "noe" value="No"> No</div>
              <br><br>
-             <div class = "yesnoe bt"><input type="radio" name="se" value="Fully" > Fully</div><div class = "yesnoe bt"><input type="radio" name="se" value="To a large extent"> To a large extent</div><div class = "yesnoe bt"><input type="radio" name="se" value="To a limited extent"> To a limited extent</div><div class = "yesnoe bt"><input type="radio" name="se" value="Not at all"> Not at all</div></td>
+             <div class = "yesnoe bt"><input type="radio" id = "ye" name="se" value="Fully" > Fully</div><div class = "yesnoe bt"><input type="radio" name="se" value="To a large extent"> To a large extent</div><div class = "yesnoe bt"><input type="radio" name="se" value="To a limited extent"> To a limited extent</div><div class = "yesnoe bt"><input type="radio" name="se" value="Not at all"> Not at all</div></td>
         </tr>
         <tr>
           <td width = "50px">9</td>
           <td class = "item">Whether Audio-Visual aids were used? <div>(If yes, evaluate its use)</div> </td>
           <td width = "417px">
-            <div class = "bt"><input type="radio" name="s6" class = "yes" value="Yes" > Yes</div><div class = "bt"><input type="radio" name="s6" class = "no" value="No"> No</div>
+            <div class = "bt"><input type="radio" id = "yes6" class = "yes" value="Yes" > Yes</div><div id = "n6" class = "bt"><input type="radio" name="s6" id = "no6" value="No"> No</div>
             <br><br>
-            <div class = " yesno bt"><input type="radio" name="s6" value="Excellent"> Excellent</div><div class = "yesno bt"><input type="radio" name="s6" value="Very Good"> Very Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Good"> Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Adequate"> Adequate</div><div class = "yesno bt"><input type="radio" name="s6" value="Poor"> Poor</div></td>
+            <div class = " yesno bt"><input type="radio" id = "y6" name="s6" value="Excellent"> Excellent</div><div class = "yesno bt"><input type="radio" name="s6" value="Very Good"> Very Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Good"> Good</div><div class = "yesno bt"><input type="radio" name="s6" value="Adequate"> Adequate</div><div class = "yesno bt"><input type="radio" name="s6" value="Poor"> Poor</div></td>
         </tr>
         <tr>
           <td width = "50px">10</td>
@@ -311,59 +311,102 @@
 
   $(document).ready(function()
     {
-        $(".yes").click(function()
+        $("#yes6").click(function()
         {
             $(".yesno").show();
+            document.getElementById("y6").required = true;
+            document.getElementById("yes6").checked = false;
+            document.getElementById("no6").checked = false;
+            $("#n6").hide();
+            $("#yes6").hide();
         });
-        $(".no").click(function()
+        $("#no").click(function()
         {
             $(".yesno").hide();
+            document.getElementById("y6").required = false;
+            $("#yes6").show();
         });
 
-        $(".yesa").click(function()
+       $("#yesa").click(function()
         {
             $(".yesnoa").show();
+            document.getElementById("ya").required = true;
+            document.getElementById("yesa").checked = false;
+            document.getElementById("noa").checked = false;
+            $("#n1").hide();
+            $("#yesa").hide();
         });
-        $(".noa").click(function()
+        $("#noa").click(function()
         {
             $(".yesnoa").hide();
+            document.getElementById("ya").required = false;
+            $("#yesa").show();
         });
 
-        $(".yesb").click(function()
+        $("#yesb").click(function()
         {
             $(".yesnob").show();
+            document.getElementById("yb").required = true;
+            document.getElementById("yesb").checked = false;
+            document.getElementById("nob").checked = false;
+            $("#n2").hide();
+            $("#yesb").hide();
         });
-        $(".nob").click(function()
+        $("#nob").click(function()
         {
             $(".yesnob").hide();
+            document.getElementById("yb").required = false;
+            $("#yesb").show();
         });
 
-        $(".yesc").click(function()
+        $("#yesc").click(function()
         {
             $(".yesnoc").show();
+            document.getElementById("yc").required = true;
+            document.getElementById("yesc").checked = false;
+            document.getElementById("noc").checked = false;
+            $("#n3").hide();
+            $("#yesc").hide();
         });
-        $(".noc").click(function()
+        $("#noc").click(function()
         {
             $(".yesnoc").hide();
+            document.getElementById("yc").required = false;
+            $("#yesc").show();
         });
 
-        $(".yesd").click(function()
+        $("#yesd").click(function()
         {
             $(".yesnod").show();
+            document.getElementById("yd").required = true;
+            document.getElementById("yesd").checked = false;
+            document.getElementById("nod").checked = false;
+            $("#n4").hide();
+            $("#yesd").hide();
         });
-        $(".nod").click(function()
+        $("#nod").click(function()
         {
             $(".yesnod").hide();
+            document.getElementById("yd").required = false;
+            $("#yesd").show();
         });
 
-        $(".yese").click(function()
+        $("#yese").click(function()
         {
             $(".yesnoe").show();
+            document.getElementById("ye").required = true;
+            document.getElementById("yese").checked = false;
+            document.getElementById("noe").checked = false;
+            $("#n5").hide();
+            $("#yese").hide();
         });
-        $(".noe").click(function()
+        $("#noe").click(function()
         {
             $(".yesnoe").hide();
+            document.getElementById("ye").required = false;
+            $("#yese").show();
         });
+      
 
         $(".b1").click(function()
         {
